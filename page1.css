@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ACA6C2;
+    
+  }
+  h1{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 100px;
+    letter-spacing: 3px;
+    font-family: 'Orbitron', sans-serif;
+    color: #EEEEEE;
+}
+.container3{
+    padding: 100px 100px;
+}
+.rect1,.rect2,.rect3,.rect4{
+    width: 30vh;
+    height: 30vh;
+    background-color: aliceblue;
+    border-radius: 50px;  
+}
+
+.rect1{
+    margin-top:-33vh ;
+    margin-left: 10vh;
+}
+
+.rect2{
+    margin-top: -31.5vh;
+    margin-left: 60vh;
+}
+.rect3{
+    margin-top: -33.5vh;
+    margin-left: 110vh;
+}
+.rect4{
+    margin-top: -33vh;
+    margin-left: 160vh;
+}
+#img,#img2,#img3,#img4{
+    width:90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-left: 46px;
+    position: absolute;
+}
+#dairy1{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 57px;
+}
+#dp1{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-bottom: -90px;
+    margin-left: 100px;
+    padding: 10px;
+}

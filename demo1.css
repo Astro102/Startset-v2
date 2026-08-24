@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: url('milkyway.jpg');
+    background-color: rgba(7, 7, 7, 1);
+    background-blend-mode: hard-light;
+    background-size: cover;
+}
+header{
+    background: rosybrown;
+}
+.heading{
+    font-size: 3em;
+}
+nav ul li{
+    display: inline-flex;
+}
+li a{
+    font-family: 'Orbitron',sans-serif;
+    color: seashell;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px 33px;
+}
+#nav1,#nav2,#nav3,#nav4,#nav5,#nav6{
+    border-bottom: 2px solid greenyellow;
+    border-radius: 10px;
+}

@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: aliceblue;
+    background-image: linear-gradient(180deg,#bdc3c7,#2c3e50); */
+    background-image: url('milky.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* .video{
+    top: 0;
+    left: 0;
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+} */
+header{
+    /* background: darkcyan;  */
+    background-image: url('movie.jpg');
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: hard-light;
+    max-width: 100%;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position-y: 35%;
+}
+.heading{
+    font-family: 'Orbitron',sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding: 20px 20px;
+    margin: auto;
+    color: gainsboro;
+    transition-duration: 1s;
+}
+.icon{
+    display: none;
+    top: 0;
+    margin-left: 4%;
+}
+.icon .fa{
+    font-size: 15px;
+    color: azure;
+}
+nav{
+    font-size: 30px;  
+}
+nav ul li{ 
+    display: inline-flex;
+    flex-direction: row;
+}
+li a{                        /*navigation bar*/
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 26px 52px;
+    max-width: 100%;
+    font-size: 20px;
+    margin-top: 1px;
+    font-family: 'Orbitron',sans-serif;
+    color: black;
+    /* overflow: hidden; */
+    /* background: url('stars3.jpg'); */ 
+}
+#nav1{                                                        /*Astronomy*/
+    border-bottom: 4px solid #9daaf8;
+    color: #9daaf8;
+    max-width: 100%;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav1:hover{                                               
+    /* background-image: linear-gradient(to bottom,rgb(187, 15, 15),rgb(240, 35, 76), rgb(243, 79, 112),rgb(243, 115, 141)); */
+    background: url('carb.jpg');
+    background-color: rgba(0, 0, 0, 1);
+    background-blend-mode: hard-light;
+    max-width: 100%;
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav2{                                                     /*Learn*/
+    border-bottom: 4px solid #e01f12;
+    color: #e01f12;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav2:hover{
+    /* background-image: linear-gradient(to bottom ,rgb(226, 29, 193),rgb(228, 76, 202),rgb(235, 130, 217)); */
+    background: url('learn2.jpeg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav3{                                                    /*Telescopes*/
+    border-bottom: 4px solid rgb(33, 20, 221);
+    color: rgb(33, 20, 221);
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav3:hover{
+    /* background-image: linear-gradient(to bottom,rgb(119, 38, 224),rgb(157, 94, 240),rgb(178, 138, 229)); */
+    background: url('telescp.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav4{                                                    /*Quiz*/
+    border-bottom: 4px solid rgb(4, 150, 4);
+    color: rgb(4, 150, 4);
+    border-radius: 10px;
+    transition-duration: 0.6s;
+
+}
+#nav4:hover{
+    /* background-image: linear-gradient(to bottom, rgb(115, 184, 13), rgb(149, 192, 85), rgb(156, 184, 114)); */
+    background: url('quiz.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+
+#nav5{                                                     /*Movies*/
+    border-bottom: 4px solid burlywood;
+    color: burlywood;
+    border-radius: 10px;
+    transition-duration: 0.6s ;
+}
+#nav5:hover{
+    background-image: url('groot.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav6{                                                   /*Comments*/   
+    border-bottom: 4px solid rgb(0, 238, 178);
+    color: rgb(0, 238, 178);
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav6:hover{
+    background: url('comments.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+.head{
+    text-align: center;
+    font-size: 60px;
+    margin: auto;
+    margin-top: 5%;
+    color: #c3a7f3;
+    font-family: 'Quicksand',sans-serif;
+    padding: 10px;
+}
+.name{
+    color: #b695f1;
+    font-family: 'Alegreya Sans',sans-serif;
+    font-weight: bolder;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 11%;
+    text-decoration: underline;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.name2{
+    color: #9698db;
+    font-family: 'Alegreya Sans',sans-serif;
+    font-weight: bolder;
+    margin-top: 9%;
+    margin-left: 12%;
+    margin-bottom: -2%;
+    text-decoration: underline #A3A4B8;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.inter{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+#image1,#image2,#image3,#image4,#image5,#image6,#image7{
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 3%;
+    transition-duration: 1s;
+}
+.name5{
+    color: #9698db;
+    font-family: 'Alegreya Sans',sans-serif;
+    font-weight: bolder;
+    margin-top: 7%;
+    margin-left: 5%;
+    text-decoration: underline #A3A4B8;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.para1,.para2,.para3,.para4,.para5,.para6,.para7{
+    border: 1px solid #DADAE3;
+    border-radius: 30px;
+    margin-right: 2%;
+    font-size: 25px;
+    padding-left: 20px;
+    color: #A3A4B8;
+    text-align: justify;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 25px 30px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+#link,#link2,#link3,#link4,#link5,.para6 #link6,.para7 #link7{
+    border: 1px solid #DADAE3;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #DADAE3;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    outline: none;
+}
+#link:hover,#link2:hover,#link3:hover,#link4:hover,#link5:hover,.para6 #link6:hover,.para7 #link7:hover{
+    color: black;
+}
+#link:hover{
+    border: 1px solid rgb(182, 109, 13);
+    background-color: rgb(182, 109, 13);
+}
+#link2:hover{
+    border: 1px solid rgb(235, 121, 69);
+    background-color: rgb(235, 121, 69);
+}
+#link3:hover{
+    border: 1px solid rgb(143, 167, 231);
+    background-color: rgb(143, 167, 231);
+}
+#link4:hover{
+    border: 1px solid rgb(67, 214, 240);
+    background-color: rgb(67, 214, 240);
+}
+#link5:hover{
+    color: white;
+    border: 1px solid rgb(99, 47, 41);
+    background-color: rgb(99, 47, 41);
+}
+#link6:hover{
+    border: 1px solid rgb(151, 153, 247);
+    background-color: rgb(151, 153, 247);
+}
+#link7:hover{
+    border: 1px solid rgb(231, 145, 16);
+    background-color: rgb(231, 145, 16);
+}
+.head2{
+    text-align: center;
+    font-size: 70px;
+    margin: auto;
+    margin-top: 5%;
+    color: #c3a7f3;
+    font-family: 'Quicksand',sans-serif;
+    padding: 10px;
+}

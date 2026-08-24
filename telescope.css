@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: aliceblue ; */
+    /* background-image: linear-gradient(to top,#16222A,#3A6073,#928DAB 100%,#928DAB 100%); */
+    background: url('milky.jpg');
+    background-color: rgba(0, 0, 0, 1);
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    /* background: darkcyan;  */
+    background: url('telescope4.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: hard-light;
+    background-position-y: 34%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.heading{
+    font-family: 'Orbitron',sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding: 40px 20px;
+    color: gainsboro;
+    transition-duration: 1s;
+}
+.icon{
+    display: none;
+    top: 0;
+    margin-left: 4%;
+}
+.icon .fa{
+    font-size: 15px;
+    color: azure;
+}
+nav{
+    font-size: 30px;  
+}
+nav ul li{ 
+    display: inline-flex;
+    flex-direction: row;
+}
+li a{                        /*navigation bar*/
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 26px 52px;
+    max-width: 100%;
+    font-size: 20px;
+    margin-top: 1px;
+    font-family: 'Orbitron',sans-serif;
+    color: black;
+    /* overflow: hidden; */
+    /* background: url('stars3.jpg'); */ 
+}
+#nav1{                                                        /*Astronomy*/
+    border-bottom: 4px solid #9daaf8;
+    color: #9daaf8;
+    max-width: 100%;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav1:hover{                                               
+    /* background-image: linear-gradient(to bottom,rgb(187, 15, 15),rgb(240, 35, 76), rgb(243, 79, 112),rgb(243, 115, 141)); */
+    background: url('carb.jpg');
+    background-color: rgba(0, 0, 0, 1);
+    background-blend-mode: hard-light;
+    max-width: 100%;
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav2{                                                     /*Learn*/
+    border-bottom: 4px solid #e01f12;
+    color: #e01f12;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav2:hover{
+    /* background-image: linear-gradient(to bottom ,rgb(226, 29, 193),rgb(228, 76, 202),rgb(235, 130, 217)); */
+    background: url('learn2.jpeg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav3{                                                    /*Telescopes*/
+    border-bottom: 4px solid rgb(33, 20, 221);
+    color: rgb(33, 20, 221);
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav3:hover{
+    /* background-image: linear-gradient(to bottom,rgb(119, 38, 224),rgb(157, 94, 240),rgb(178, 138, 229)); */
+    background: url('telescp.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav4{                                                    /*Quiz*/
+    border-bottom: 4px solid rgb(4, 150, 4);
+    color: rgb(4, 150, 4);
+    border-radius: 10px;
+    transition-duration: 0.6s;
+
+}
+#nav4:hover{
+    /* background-image: linear-gradient(to bottom, rgb(115, 184, 13), rgb(149, 192, 85), rgb(156, 184, 114)); */
+    background: url('quiz.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+
+#nav5{                                                     /*Movies*/
+    border-bottom: 4px solid burlywood;
+    color: burlywood;
+    border-radius: 10px;
+    transition-duration: 0.6s ;
+}
+#nav5:hover{
+    /* background-image: linear-gradient(to bottom,  rgb(240, 23, 23),  rgb(240, 93, 93),  rgb(231, 148, 148)); */
+    background-image: url('groot.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav6{                                                   /*Comments*/   
+    border-bottom: 4px solid rgb(0, 238, 178);
+    color: rgb(0, 238, 178);
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav6:hover{
+    /* background-image: linear-gradient(to bottom, rgb(238, 146, 54), rgb(238, 170, 103), rgb(247, 199, 151)); */
+    background: url('comments.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#head1{
+    text-align: center;
+    font-size: 100px;
+    margin: 3%;
+    font-family: 'Quicksand',sans-serif;
+    letter-spacing: 2px;
+    color: rgb(238, 173, 143);
+}
+.telescope{
+    margin-top: 20px;
+    margin-left: 32.6%;
+    max-width: 100%;
+    width: 450px;
+    height: 400px;
+    justify-items: center;
+    align-content: center;
+    border-radius: 50px;
+    box-shadow: 1px 1px 30px bisque;
+}
+#ph{
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bolder;
+    color:  rgb(223, 159, 130);
+    text-decoration: underline ;
+    /* background-color: rgb(223, 159, 130); */
+}
+p{
+    border: 1px solid seashell;
+    padding: 20px 20px;
+    border-radius: 30px;
+    margin: 2%;
+    font-weight: 700;
+    font-family: 'Quicksand',sans-serif;
+    color: rgb(247, 214, 201);
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 20px;
+}
+#title{
+    text-decoration: underline;
+    font-size: 30px;
+    color: rgb(238, 173, 143);
+}
+#ph2{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bolder;
+    color:  rgb(223, 159, 130);
+    text-decoration: underline;
+    /* font-family: 'Montserrat',sans-serif; */
+    /* background-color: rgb(223, 159, 130); */
+}
+#ph3{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bolder;
+    color:  rgb(223, 159, 130);
+    text-decoration: underline;
+    /* font-family: 'Montserrat',sans-serif; */
+    /* background-color: rgb(223, 159, 130); */
+}
+#refract{
+    width: 500px;
+    height: 400px;
+    max-width: 100%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    border-radius: 50px;
+    box-shadow: 1px 1px 20px bisque;
+}
+.cap{
+    text-align: center;
+    color: seashell;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 0;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: underline bisque;
+}
+#reflect{
+    width: 500px;
+    height: 400px;
+    max-width: 100%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    border-radius: 50px;
+    box-shadow: 1px 1px 20px bisque;
+}
+@media screen and (max-width: 400px){
+    #reflect{
+        width: 200px;
+        height: auto;
+    }
+}
+#ph4{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bolder;
+    color:  rgb(223, 159, 130);
+    text-decoration: underline;
+    /* font-family: 'Alegreya Sans',sans-serif; */
+    /* background-color: rgb(223, 159, 130); */
+}
+#link{
+    border: 1px solid rgb(223, 159, 130);
+    border-radius: 30px;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    background-color: rgb(223, 159, 130);
+    margin: 2%;
+    margin-top: 2%;
+}
+#link:hover{
+    opacity: 0.8;
+}

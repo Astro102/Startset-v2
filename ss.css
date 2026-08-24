@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('milkyway.jpg');
+    /* background-image: url('stars5.jpg'); */
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: soft-light;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vmin;   
+}
+@media screen and (max-width:300px) and (min-height:200px){
+    body{
+        background: url('stars5.jpg');
+        max-width: 100%;
+        max-height: 100%;
+        background-size: cover;
+    }
+}
+.image{
+    z-index: -1;
+    position: fixed;
+    size: cover;
+    width: 100%;
+}
+.planet,.star{
+    position: absolute;
+    width: var(--width);
+    height: var(--width);
+    top: calc(50% - var(--width) / 2);
+    left: calc(50% - var(--width) / 2);
+    border-radius: 50%;
+    z-index: -1;
+}
+@media screen and (max-width:300px) and (min-height:200px){
+    .planet,.star{
+        position: absolute;
+        width: var(--width);
+        height: var(--width);
+        top: calc(50% - var(--width) / 2);
+        left: calc(50% - var(--width) / 2);
+        border-radius: 50%;
+    }
+}
+.sun{
+    --width: 140px;
+    animation: sun 60s infinite reverse;
+}
+.mercury{
+    --width: 10px;
+    cursor: pointer;
+    animation: mercury 5s infinite linear; 
+    
+}
+.venus{
+    --width: 22px;
+    animation: venus 8s infinite linear; 
+    
+}
+.earth{
+    --width: 30px;
+    animation: earth 12s infinite linear; 
+    
+}
+.mars{
+    --width: 19px;
+    animation: mars 17s infinite linear;
+    
+}
+.jupiter{
+    --width: 70px;
+    animation: jupiter 24s infinite linear;
+     
+}
+.saturn{
+    --width: 60px;
+    animation: saturn 30s infinite linear;
+     
+}
+.uranus{
+    --width: 50px;
+    animation: uranus 37s infinite linear; 
+    
+}
+.uranus::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    border: 2px solid #567777;
+    border-top: 0;
+    border-radius: 60%;
+    transform: translate(-70%, -150%) rotate(95deg);  
+}
+.neptune{
+    --width: 40px;
+    animation: neptune 45s infinite linear; 
+    
+}
+@media all and (max-width:300px) and (min-height:200px){
+    .sun{
+        width: 7px;
+    }
+    .mercury{
+        width: 5px;
+    }
+    .venus{
+        width: 11px;
+    }
+    .earth{
+        width: 15px;
+    }
+    .mars{
+        width: 9px;
+    }
+    .jupiter{
+        width: 35px;
+    }
+    .saturn{
+        width: 30px
+    }
+    .uranus{
+        width: 25px;
+    }
+    .neptune{
+        width: 20px
+    }
+}
+@keyframes sun{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(-360deg);
+    }
+
+}
+@keyframes mercury{
+    0%{
+        animation: mercury 5s infinite linear;
+        transform: rotate(0) translateX(70px);
+    }
+    100%{
+        animation: mercury 5s infinite linear;
+       transform: rotate(360deg) translateX(70px);
+    }
+}
+@keyframes venus{
+    0%{
+        transform: rotate(0) translateX(100px);
+    }
+    100%{
+       transform: rotate(360deg) translateX(100px);
+    }
+}
+@keyframes earth{
+    0%{
+        transform: rotate(0) translateX(130px);
+    }
+    100%{
+       transform: rotate(360deg) translateX(130px);
+    }
+}
+@keyframes mars{
+    0%{
+        transform: rotate(0) translateX(160px);
+    }
+    100%{
+       transform: rotate(360deg) translateX(160px);
+    }
+}
+@keyframes jupiter{
+    0%{
+        transform: rotate(0) translateX(220px) translateZ(10px);
+    }
+    100%{
+       transform: rotate(360deg) translateX(220px) translateZ(10px);
+    }
+}
+@keyframes saturn{
+    0%{
+        transform: rotate(0) rotateY(10deg) translateX(280px) translateY(-20px);
+    }
+    100%{
+       transform: rotate(360deg) rotateY(10deg) translateX(280px)translateY(-20px);
+    }
+}
+@keyframes uranus{
+    from{
+        transform: rotate(0) translateX(390px);
+    }
+    to{
+       transform: rotate(360deg) translateX(390px);
+    }
+}
+@keyframes neptune{
+    0%{
+        transform: rotate(0) translateX(450px)translateY(-10px);
+    }
+    100%{
+       transform: rotate(360deg) translateX(450px)translateY(-10px);
+    }
+}

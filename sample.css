@@ -1,0 +1,32 @@
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.box,.box2{
+    width: 130px;
+    height: 130px;
+    border-radius: 40px;
+}
+.box{
+    background: chartreuse;
+    overflow-x: visible;
+    animation: box 1000ms infinite linear; 
+    margin-top: 0vh;
+}
+.box2{
+    background: chocolate;
+    animation: box2 1200ms infinite linear; 
+    margin-left: -7%;
+    margin-top: 10vh;
+}
+@keyframes box {
+    from{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes box2 {
+    from{
+        transform: rotateZ(360deg);
+    }
+}

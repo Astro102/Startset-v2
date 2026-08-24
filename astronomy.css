@@ -1,0 +1,154 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: url('stars3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  background-color:#000;
+}
+hr{
+  width: 80%;
+  height: 1px;
+}
+.video{
+  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  max-width: 100%;
+}
+.nav{
+  position: fixed;
+  display: block;
+  position: sticky;
+  width: 100%;
+  margin-top: 0px;
+}
+.nav a{
+  font-family: 'Orbitron',sans-serif;
+  padding: 14px 26px;
+  float: left;
+  font-size: 25px;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  transition: 0.9s;
+}
+.nav a:hover{
+  color: black;
+  background-color: white;
+  border-radius: 55px;
+}
+.nav a i .fa{
+  padding: 8px;
+}
+.search{
+  float: right;
+  padding-right: 8px; 
+}
+.tex{
+  font-size: 20px;
+  margin-top: 10px;
+  width: 35px;
+  background-color: #cccccc;
+  box-sizing: border-box;
+  border: 2px solid #cccccc;
+  border-radius: 70px;
+  transition-duration: 1s;
+  outline: none;
+}
+.tex:hover{
+  width: 20%;
+  background-color: #000000;
+  color: #fff;
+}
+.tex::placeholder{
+  color: hotpink;
+}
+@media screen and(max-width: 800px){
+  .tex{
+    width: 160px;
+  }
+}
+h1{
+  color: white;
+  font-size: 60px;
+  letter-spacing: 20px;
+  text-align: center;
+  text-shadow:2px 2px black;
+  font-family: 'Orbitron',sans-serif;
+  margin-top: 10px;
+}
+@media all and (max-width: 1000px){
+  h1{
+    font-size: 40px;
+  }
+}
+.galaxy{
+  text-align: center;
+  background-color: none; 
+}
+.galaxy h2{
+  color: white;
+  text-decoration: underline;
+  font-family: 'Orbitron',sans-serif;
+  letter-spacing: 15px;
+  font-weight: bolder;
+  font-size: 35px;
+  margin-top: 0px;
+}
+.galaxy .img{
+  width: 1000px;
+  height: 500px;
+}
+.img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 45px;
+}
+.nebula{
+  text-align: center;
+  background-color: none;
+}
+.nebula h2{
+  font-family: 'Orbitron',sans-serif;
+  color: white;
+  letter-spacing: 15px;
+  font-weight: bold;
+  font-size: 35px;
+}
+.space{
+  text-align: center;
+  background-color: none;
+}
+.space h2{
+  font-family: 'Orbitron',sans-serif;
+  color: white;
+  letter-spacing: 15px;
+  font-weight: bold;
+  font-size: 35px;
+}
+.solar{
+  text-align: center;
+  background-color: none;
+}
+.solar h2{
+  font-family: 'Orbitron',sans-serif;
+  color: white;
+  font-size: 35px;
+  letter-spacing: 15px;
+  font-weight: bolder;
+}
+.cc{
+  text-align: right;
+  color: white;
+  font-size: 15px;
+  padding-right: 10px;
+}

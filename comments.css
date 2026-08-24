@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: aliceblue ; */
+    /* background-image: linear-gradient(180deg,#bdc3c7,#2c3e50); */
+    background-image: url('milky.jpg');
+    background-color: #000;
+    background-blend-mode: hard-light;
+    max-width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.video{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+header{
+    /* background: darkcyan;  */
+    background: url('nebula4.jpg');
+    background-color: rgb(0, 0, 0, 0.9);
+    background-blend-mode: hard-light;
+    background-position-y: 50%;
+    width: 100%;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.heading{
+    font-family: 'Orbitron',sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding: 30px 20px;
+    margin: auto;
+    color: gainsboro;
+    transition-duration: 1s;
+}
+.icon{
+    display: none;
+    top: 0;
+    margin-left: 4%;
+}
+.icon .fa{
+    font-size: 15px;
+    color: azure;
+}
+nav{
+    font-size: 30px;  
+}
+nav ul li{ 
+    display: inline-flex;
+    flex-direction: row;
+}
+li a{                        /*navigation bar*/
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 26px 52px;
+    max-width: 100%;
+    font-size: 20px;
+    margin-top: 1px;
+    font-family: 'Orbitron',sans-serif;
+    color: black;
+    /* overflow: hidden; */
+    /* background: url('stars3.jpg'); */ 
+}
+#nav1{                                                        /*Astronomy*/
+    border-bottom: 4px solid #9daaf8;
+    color: #9daaf8;
+    max-width: 100%;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav1:hover{                                               
+    /* background-image: linear-gradient(to bottom,rgb(187, 15, 15),rgb(240, 35, 76), rgb(243, 79, 112),rgb(243, 115, 141)); */
+    background: url('carb.jpg');
+    background-color: rgba(0, 0, 0, 1);
+    background-blend-mode: hard-light;
+    max-width: 100%;
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav2{                                                     /*Learn*/
+    border-bottom: 4px solid #e01f12;
+    color: #e01f12;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav2:hover{
+    /* background-image: linear-gradient(to bottom ,rgb(226, 29, 193),rgb(228, 76, 202),rgb(235, 130, 217)); */
+    background: url('learn2.jpeg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav3{                                                    /*Telescopes*/
+    border-bottom: 4px solid rgb(33, 20, 221);
+    color: rgb(33, 20, 221);
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav3:hover{
+    /* background-image: linear-gradient(to bottom,rgb(119, 38, 224),rgb(157, 94, 240),rgb(178, 138, 229)); */
+    background: url('telescp.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav4{                                                    /*Quiz*/
+    border-bottom: 4px solid rgb(4, 150, 4);
+    color: rgb(4, 150, 4);
+    border-radius: 10px;
+    transition-duration: 0.6s;
+
+}
+#nav4:hover{
+    /* background-image: linear-gradient(to bottom, rgb(115, 184, 13), rgb(149, 192, 85), rgb(156, 184, 114)); */
+    background: url('quiz.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+
+#nav5{                                                     /*Movies*/
+    border-bottom: 4px solid burlywood;
+    color: burlywood;
+    border-radius: 10px;
+    transition-duration: 0.6s ;
+}
+#nav5:hover{
+    /* background-image: linear-gradient(to bottom,  rgb(240, 23, 23),  rgb(240, 93, 93),  rgb(231, 148, 148)); */
+    background-image: url('groot.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#nav6{                                                   /*Comments*/   
+    border-bottom: 4px solid rgb(0, 238, 178);
+    color: rgb(0, 238, 178);
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+#nav6:hover{
+    /* background-image: linear-gradient(to bottom, rgb(238, 146, 54), rgb(238, 170, 103), rgb(247, 199, 151)); */
+    background: url('comments.jpg');
+    border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+}
+#top{
+    color: rgb(167, 108, 101);
+    text-align: center;
+    margin-top: 4%;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 60px;
+}
+.section{
+    align-content: center;
+    justify-content: center;
+    min-height: 10vh;
+    border: 1px solid rgb(105, 74, 46);
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    padding: 30px 30px;
+    max-width: 100%;
+    transition-duration: 0.6s;
+}
+.name,.age,.email,.comment{
+    color: rgb(241, 232, 224);
+    font-weight: bolder;
+    margin-top: 2%;
+    font-size: 40px;
+    padding: 5px 20px;
+    text-align: center;
+    font-family: 'Quicksand',sans-serif;
+}
+#text1,#age1,#email1,#comment1{
+    border-radius: 10px;
+    margin-top: 2%;
+    width: 100%;
+    outline: none;
+    font-family: 'Quicksand',sans-serif;
+    color: wheat;
+    border: 1px solid coral;
+    padding: 15px;
+    font-size: 23px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#text1::placeholder,#age1::placeholder,#email1::placeholder,#comment1::placeholder{
+    color: rosybrown;
+    font-weight: bolder;
+    font-family: 'Quicksand',sans-serif;
+    /* background: url('stars.jpg'); */
+}
+#comment1{
+    width: 55%;
+    padding: 40px;
+    text-align: center;
+}
+#submit{
+    padding: 20px 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 2%;
+    background-size: cover;
+    color: rgb(36, 34, 34);
+    background-color: bisque;
+}
+@media screen  and (max-width: 600px){
+    #text1,#age1,#comment1,#submit{
+        width: 100%;
+    }
+    .name,.age,.comment{
+        font-size: 25px;
+        margin-top: 5%;
+    }
+}
+.social{
+    color: rgb(241, 232, 224);
+    font-family: 'Quicksand',sans-serif;
+    font-size: 30px;
+    display: inline;
+    padding: 10px;
+    margin-bottom: 2%;
+}
+.fa{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 2%;
+    margin: 2%;
+}
+.fa:hover{
+    opacity: 0.6;
+}
+.fa-instagram{
+    /* background-image: linear-gradient( #8a3ab9,#e95950,#bc2a8d, #fccc63,#fbad50,#cd486b,#4c68d7); */
+    background: #800080;
+    color: whitesmoke;
+    border-radius: 50%;
+}
+.fa-whatsapp{
+    background: rgb(3, 211, 48);
+    color: black;
+    border-radius: 50%;
+}
+.fa-facebook{
+    background: rgb(24, 103, 221);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 50%;
+}
+.fa-youtube{
+    background: red;
+    color: black;
+    border-radius: 50%;
+}
