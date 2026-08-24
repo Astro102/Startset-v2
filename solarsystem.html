@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Kufam:wght@400;500&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="solarsystem.css">
+    <title>Solar System</title>
+</head>
+<body>
+
+    <!-- <div class="video">
+		<video width="100%" loop autoplay muted>
+			  <source src="galaxy.mp4" type="video/mp4">
+		</video>
+	</div> -->
+    <header>
+        <div class="heading">
+            <h1>StarSet</h1>
+        </div>
+        <a class="icon"><i class="fa fa-bars"></i></a>
+    </header>
+    <nav class="navigate" id="navigation">
+    <ul >
+        <li><a href="astronomy.html" id="nav1">Astronomy</a></li>
+        <li><a href="StarSet.html" id="nav2">Learn</a></li>
+        <li><a href="telescope.html" id="nav3">Telescopes</a></li>
+        <li><a href="quiz1.html" id="nav4">Quiz</a></li>
+        <li><a href="movies.html" id="nav5">Movies</a></li>
+        <li><a href="comments.html" id="nav6">Comments</a></li>
+    </ul>
+    </nav>
+    <div class="solar">
+        <h2 id="sun">What is Solar System?</h2>
+        <p id="sunp">The collection of eight planets and their moons in orbit round the sun, together with smaller bodies in the form of asteroids, meteoroids, and comets. The planets of the solar system are (in order of distance from the sun) Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Solar System is not only of planets and moons we do have dwarf planets like pluto,huamea,makemake,eris,ceres.</p>
+    </div>
+    <div class="planets">
+        <h2 id="planetsh">Planets</h2>
+        <img id="solar" src="planets.png" alt="solarsystem" usemap="#planets" width="600px" height="350px">
+        <map name="planets" id="solar">
+            <area shape="rect" coords="4,9,597,344" alt="solar" href="planets.html">
+        </map>
+    </div>
+    <div class="ss">
+        <a href="ss.html" id="ss">Solar System</a>
+    </div>
+    <div class="dwarf">
+        <h2 id="dwarfh">Dwarf Planets</h2>
+        <img src="dwarf.jpg" alt="dwarf-planets" usemap="#dwarf" id="dwarf" width="700px">
+        <map name="dwarf" id="dwarf">
+            <area shape="rect" coords="5,2,564,252" href="dwarf.html">
+        </map>
+    </div>
+    <div class="asteroid">
+        <h2 id="asteroidh">Asteroid Belt,<br>Meteors,<br>Comets</h2>
+        <img src="asteroid.jpg" alt="asteroid belt" usemap="#asteroid" id="asteroid" width="650px">
+        <map name="asteroid" id="asteroid">
+            <area shape="rect" coords="3,4,648,360" href="asteroid.html">
+        </map>
+    </div>
+</script>
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+          window.botpressWebChat.init({
+            "botName": "StarBot",
+            "composerPlaceholder": "Let's know more about universe!!",
+            "botConversationDescription": "Hii I'm StarBot",
+            "avatarUrl": "https://i.pinimg.com/564x/68/81/49/688149f4135010e22c67004d39d0cbb1.jpg",
+            "enableConversationDeletion": true,
+            "showCloseButton": true,
+            "botId": "36280a5e-1999-4a3c-948e-851db9f28156",
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+            "messagingUrl": "https://messaging.botpress.cloud",
+            "clientId": "36280a5e-1999-4a3c-948e-851db9f28156",
+            "webhookId": "a30c4a41-c168-4c0b-8dba-43a8eaa7a071",
+            "lazySocket": true,
+            "theme": "prism",
+            "closeOnEscape": true,
+            "themeColor": "#000",
+            "stylesheet": "https://webchat-styler-css.botpress.app/prod/161285db-40b8-4be0-8bfc-a7c65fdba3f2/v14344/style.css",
+        });
+</script>
+</body>
+</html>

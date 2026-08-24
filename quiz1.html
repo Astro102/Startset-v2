@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz1.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+    <h1 id="head">StarSet</h1>
+    <div class="nav">
+        <ul>
+            <li><a href="StarSet.html">Learn</a></li>
+            <li><a href="telescope.html">Telescopes</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="comments.html">Comments</a></li>
+        </ul>
+    </div>
+    </header>
+    <section>
+        <!-- <img id="img4" src="milyway(by me)3.jpg"> -->
+        <!-- <img id="img5" src="stars6.JPG"> -->
+        <img id="img2" src="stars.jpg">
+        <img id="img" src="mountains.png">
+        <img id="img3" src="mountains3.png">
+        <img id="img1" src="moon1.png" width="200px" height="200px">
+        <h2 id="Qu">Test your knowledge<br>Below!!!</h2>
+        
+    </section>
+    <p class="para">Let's see what you've learned this far. This quiz will help you brush up your topics you've learned this far, this quiz anticipates topics covered within this website. There will be total 10 questions in the quiz to answer.<br> <a href="quiz.html" id="next">Start Quiz</a> </p>
+
+    <script>
+        let moon = document.getElementById('img1');
+        let stars = document.getElementById('img2');
+        let mountain = document.getElementById('img');
+        let mountains = document.getElementById('img3');
+        let title = document.getElementById('Qu');
+        let next = document.getElementById('next');e
+                                                            
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            moon.style.left = value * 1.25 + 'px';
+            moon.style.top = value * -1 + 'px';
+            stars.style.left = value * 0.8 + 'px';
+            stars.style.top = value * -0.5 + 'px';
+            title.style.marginTop = value * 1 + 'px';
+            mountains.style.top = value * -0.1 + 'px';
+            next.style.marginTop = value * 1 + 'px';
+        });
+    </script>
+</body>
+</html>

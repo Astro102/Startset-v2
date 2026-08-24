@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1>StarSet</h1>
+        </div>
+        <a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </header>
+    <nav class="navigate" id="navigation">
+    <ul>
+        <li><a href="#" id="nav1">Astronomy</a></li>
+        <li><a href="#" id="nav2">Learn</a></li>
+        <li><a href="#" id="nav3">Telescopes</a></li>
+        <li><a href="#" id="nav4">Quiz</a></li>
+        <li><a href="#" id="nav5">Movies</a></li>
+        <li><a href="#" id="nav6">Comments</a></li>
+    </ul>
+    </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navigation");
+          if (x.className === "navigate") {
+            x.className += " responsive";
+          } else {
+          x.className = "navigate";
+          }
+      }
+    </script>
+</body>
+</html>

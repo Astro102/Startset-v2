@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Kufam:wght@400;500&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="comments.css">
+    <title>StarBot</title>
+</head>
+<body>
+    <!-- <div class="video">
+		<video width="100%" loop autoplay muted style="opacity: 0.5">
+			  <source src="milkyway2.mp4" type="video/mp4">
+		</video>
+	</div> -->
+    <header>
+        <div class="heading">
+            <h1 id="head">StarSet</h1>
+    </header>
+    <a class="icon"><i class="fa fa-bars"></i></a>
+    <nav class="navigate" id="navigation">
+        <ul >
+            <li><a href="astronomy.html" id="nav1">Astronomy</a></li>
+            <li><a href="StarSet.html" id="nav2">Learn</a></li>
+            <li><a href="telescope.html" id="nav3">Telescopes</a></li>
+            <li><a href="quiz1.html" id="nav4">Quiz</a></li>
+            <li><a href="movies.html" id="nav5">Movies</a></li>
+            <li><a href="comments.html" id="nav6">StarBot</a></li>
+        </ul>
+        </nav>
+    <div class="comment">
+        <h2 id="top">Comments</h2>
+        <form action="connection.php" method="POST" class="section">
+            <label class="name" for="section">Name:</label><br>
+            <input type="text" id="text1" name="Name" placeholder="Your Full Name" required><br>
+            <label class="age" for="Name">Age:</label><br>
+            <input type="integer" id="age1" name="Age" placeholder="Write your age here" required><br>
+            <label class="email" for="Name">Email:</label><br>
+            <input type="email" id="email1" name="Email" placeholder="Write your email here" required><br>
+            <label class="comment" for="Name">Comments:</label><br>
+            <textarea rows="1" id="comment1" name="Comment" placeholder="Let me know your Review . . ." required></textarea><br>
+
+            <input type="submit" name="save" id="submit" value="Post">
+        </form>
+    </div>
+    <h5 class="social">Follow:</h5>
+    <a href="https://www.instagram.com/_suraj_chdhry/" target="_blank" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-whatsapp"></a>
+    <a href="https://www.facebook.com/profile.php?id=100018697893377" target="_blank" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <!-- <script>
+        document.getElementById('submit').addEventListener("mousedown",function(){                          
+            alert('Your response is submitted');
+            console.log('Button click');
+        })
+    </script> -->
+<!-- <script>
+    function validation()  
+    {  
+        var id=document.f1.text1.value;  
+        var ps=document.f1.age1 .value;  
+        if(id.length=="" && ps.length==""){  
+            alert("User Name and Password fields are empty");  
+            return false;  
+        }  
+        else  
+        {  
+            if(id.length=="") {  
+                alert("User Name is empty");  
+                return false;  
+            }   
+            if (ps.length=="") {  
+            alert("Password field is empty");  
+            return false;
+            }  
+        }                             
+    }  
+</script> -->
+
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+          window.botpressWebChat.init({
+            "botName": "StarBot",
+            "composerPlaceholder": "Let's know more about universe!!",
+            "botConversationDescription": "Hii I'm StarBot",
+            "avatarUrl": "https://i.pinimg.com/564x/68/81/49/688149f4135010e22c67004d39d0cbb1.jpg",
+            "enableConversationDeletion": true,
+            "showCloseButton": true,
+            "botId": "36280a5e-1999-4a3c-948e-851db9f28156",
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+            "messagingUrl": "https://messaging.botpress.cloud",
+            "clientId": "36280a5e-1999-4a3c-948e-851db9f28156",
+            "webhookId": "a30c4a41-c168-4c0b-8dba-43a8eaa7a071",
+            "lazySocket": true,
+            "theme": "prism",
+            "closeOnEscape": true,
+            "themeColor": "#000",
+            "stylesheet": "https://webchat-styler-css.botpress.app/prod/161285db-40b8-4be0-8bfc-a7c65fdba3f2/v14344/style.css",
+        });
+</script>
+</body>
+</html>

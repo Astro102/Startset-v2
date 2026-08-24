@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Chrome">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="StarSet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarSet</title>
+  <style>
+  #bot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2563eb; /* Change this to your desired color */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <h1>StarSet</h1>
+    </div>
+  </header>
+  <nav class="navigate" id="navigation">
+    <ul>
+      <li><a href="astronomy.html" id="nav1">Astronomy</a></li>
+      <li><a href="StarSet.html" id="nav2">Learn</a></li>
+      <li><a href="telescope.html" id="nav3">Telescopes</a></li>
+      <li><a href="quiz1.html" id="nav4">Quiz</a></li>
+      <li><a href="movies.html" id="nav5">Movies</a></li>
+      <li><a href="comments.html" id="nav6">StarBot</a></li>
+    </ul>
+  </nav>
+
+  <div class="galaxy">
+    <h2>Galaxies</h2>
+    <img class="galax" src="milkyway2.jpg" alt="A Galaxy" usemap="#galax">
+    <map name="galax" id="#galax">
+      <area shape="rectangle" coords="2,2,494,294" alt="A Galaxy" href="galaxy.html">
+    </map>
+  </div>
+  <div class="solar">
+    <h2>Solar System</h2>
+    <img class="slr" src="solarsys.jpg" alt="Solar System" usemap="#ss" width="auto">
+    <map name="ss" id="#ss">
+      <area shape="rectangle" coords="2,3,499,298" alt="Solar System" href="solarsystem.html">
+    </map>
+  </div>
+  <div class="nebula">
+    <h2>Nebulaes</h2>
+    <img class="neb" src="nebula3.jpg" alt="A Nebula" usemap="#nebula" width="auto">
+    <map name="nebula" id="#nebula">
+      <area shape="rectangle" coords="3,3,494,294" alt="nebula" href="nebula.html">
+    </map>
+  </div>
+
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "KES ki MKBKB",
+      "botId": "36280a5e-1999-4a3c-948e-851db9f28156",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "36280a5e-1999-4a3c-948e-851db9f28156",
+      "webhookId": "a30c4a41-c168-4c0b-8dba-43a8eaa7a071",
+      "lazySocket": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarSet - Astronomy</title>
+    <link rel="stylesheet" href="StarSet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1 class="heading"><a href="StarSet.html">StarSet</a></h1>
+            </div>
+            <div class="icon" id="mobile-menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="astronomy.html" id="nav1">Astronomy</a></li>
+                <li><a href="StarSet.html" id="nav2">Learn</a></li>
+                <li><a href="telescope.html" id="nav3">Telescopes</a></li>
+                <li><a href="quiz.html" id="nav4">Quiz</a></li>
+                <li><a href="movies.html" id="nav5">Movies</a></li>
+                <li><a href="starbot.html" id="nav6">StarBot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="astronomy" class="section">
+            <h2 class="section-title">Galaxies</h2>
+            <div class="content-card">
+                <img src="galaxy.jpg" alt="Galaxy" class="section-image galax" href="galaxy.html" />
+                <p class="section-text">Explore the vast universe of galaxies, from spirals to ellipticals.</p>
+            </div>
+        </section>
+
+<section id="learn" class="section">
+    <h2 class="section-title">Solar System</h2>
+    <div class="content-card">
+        <a href="solarsystem.html">
+            <img src="solarsys.jpg" alt="Solar System" class="section-image slr" />
+        </a>
+        <p class="section-text">Discover planets, moons, and the wonders of our cosmic neighborhood.</p>
+    </div>
+</section>
+
+        <section id="telescopes" class="section">
+            <h2 class="section-title">Nebulae</h2>
+            <div class="content-card">
+                <img src="nebula.jpg" alt="Nebula" class="section-image neb" />
+                <p class="section-text">Witness the birthplaces of stars in stunning nebulae.</p>
+            </div>
+        </section>
+
+        <section id="quiz" class="section">
+            <h2 class="section-title">Quiz</h2>
+            <div class="content-card">
+                <p class="section-text">Test your astronomy knowledge!</p>
+                <button class="cta-button" id="start-quiz">Start Quiz</button>
+            </div>
+        </section>
+
+        <section id="movies" class="section">
+            <h2 class="section-title">Movies</h2>
+            <div class="content-card">
+                <p class="section-text">Watch space-themed movies and documentaries.</p>
+            </div>
+        </section>
+
+        <section id="starbot" class="section">
+            <h2 class="section-title">StarBot</h2>
+            <div class="content-card">
+                <p class="section-text">Chat with StarBot for astronomy facts and help.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Quiz Modal -->
+    <div class="modal" id="quiz-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <h3>Astronomy Quiz</h3>
+            <p id="quiz-question">What planet is known as the Red Planet?</p>
+            <div class="quiz-options">
+                <button class="quiz-option">Earth</button>
+                <button class="quiz-option">Mars</button>
+                <button class="quiz-option">Jupiter</button>
+                <button class="quiz-option">Venus</button>
+            </div>
+            <p id="quiz-result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      "botName": "StarBot",
+      "composerPlaceholder": "Let's know more about universe!!",
+      "botConversationDescription": "Hii I'm StarBot",
+      "avatarUrl": "https://i.pinimg.com/564x/68/81/49/688149f4135010e22c67004d39d0cbb1.jpg",
+      "enableConversationDeletion": true,
+      "showCloseButton": true,
+      "botId": "36280a5e-1999-4a3c-948e-851db9f28156",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "36280a5e-1999-4a3c-948e-851db9f28156",
+      "webhookId": "a30c4a41-c168-4c0b-8dba-43a8eaa7a071",
+      "lazySocket": true,
+      "theme": "prism",
+      "closeOnEscape": true,
+      "themeColor": "#000",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/161285db-40b8-4be0-8bfc-a7c65fdba3f2/v14344/style.css",
+  });
+</script>
+</body>
+</html>

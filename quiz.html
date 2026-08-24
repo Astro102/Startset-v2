@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Kufam:wght@400;500&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Quiz q</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+
+  <video class="vid" muted loop autoplay style="opacity: 0.7">
+    <source src="" type="video/mp4">
+  </video>
+    <header>
+        <div class="heading">
+            <h1>StarSet</h1>
+        </div>
+        <a class="icon"><i class="fa fa-bars"></i></a>
+    </header>
+    <nav class="navigate" id="navigation">
+    <ul >
+        <li><a href="astronomy.html" id="nav1">Astronomy</a></li>
+        <li><a href="StarSet.html" id="nav2">Learn</a></li>
+        <li><a href="telescope.html" id="nav3">Telescopes</a></li>
+        <li><a href="#" id="nav4">Quiz</a></li>
+        <li><a href="movies.html" id="nav5">Movies</a></li>
+        <li><a href="comments.html" id="nav6">Comments</a></li>
+    </ul>
+    </nav>
+
+    <div id="main">
+      <div id="questions">
+        <h2 id="q">Questions idhar hai</h2>
+        <ul class="list">
+          <li>
+            <input type="radio" name="ans" id="ans1" class="answer" required>
+            <label for="ans1" id="label1">Answers are here</label>
+          </li>
+          <li>
+            <input type="radio" name="ans" id="ans2" class="answer">
+            <label for="ans2" id="label2">Answers are here</label>
+          </li>
+          <li>
+            <input type="radio" name="ans" id="ans3" class="answer">
+            <label for="ans3" id="label3">Answers are here</label>
+          </li>
+          <li>
+            <input type="radio" name="ans" id="ans4" class="answer">
+            <label for="ans4" id="label4">Answers are here</label>
+          </li>
+        </ul>
+        <!-- <button type="reset" id="previous">Previous</button> -->
+        <button type="submit" id="submit">Submit</button>
+        <div id="scorearea" class="scores"></div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
